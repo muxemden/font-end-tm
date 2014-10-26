@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>.: Truyện Mới :.</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/colla.css" rel="stylesheet">
+    <link href="./css/response-style.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header Page -->
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a class="logo" href="./" title="đọc truyện tranh, truyện mới">
+                    <span>TRUYENMOI.VN</span>
+                </a>
+            </div>
+            <div class="widget-search">
+                <form method="get" id="form-search" action="tim-kiem">
+                    <div>
+                        <input type="text" class="form-control" name="keyword" placeholder="Tìm kiếm truyện tranh">
+                        <input id="search-submit" class="" value=" " type="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="widget-user-profile">
+                <button type="button" class="btn btn-primary">Đăng Nhập</button>
+                <button type="button" class="btn btn-primary">Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <ul id="mega-menu-1">
+            <li class="">
+                <a href="./">Truyện Mới</a>
+            </li>
+            <li class="">
+                <a href="phim-le/" class="dc-mega">Danh sách manga</a>
+            </li>
+            <li>
+                <a href="phim-kinh-dien/">Thêm manga</a>
+            </li>
+            <li>
+                <a href="phim-le/" class="dc-mega">Hồ sơ</a>
+            </li>
+            <li>
+                <a href="phim-bo/" class="dc-mega">Upload</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End Header Page -->
+
+<!-- Main Page -->
+<div class="container grid-980">
+    <!-- Main Page -->
+    <div class="page-header">
+        <h1>Thêm manga: <span id="adding-title"></span></h1>
+        <a style="float: right;margin-top: -37px;display: none;" class="btn btn-primary btn-view-public-film" id="btn-view-public-film" target="_blank">Xem trước manga</a>
+        <a style="float: right;margin-top: -37px;margin-right: 10px; display: none;" class="btn btn-primary btn-film-add-episode" id="btn-film-add-episode" target="_blank">Thêm chapter</a>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 body-head">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Thêm truyện tranh
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <form method="post">
+                            <div class="col-lg-8">
+                                <div class="form-group">
+                                    <label>Tên truyện :</label>
+                                    <input class="form-control"  placeholder="Nhập link manga24...">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tên khác của truyện :</label>
+                                    <input class="form-control"  placeholder="Tiếng anh hoặc nhật...">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tác giả :</label>
+                                    <input class="form-control"  placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Năm xuất bản :</label>
+                                    <input class="form-control"  placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Từ khóa :</label>
+                                    <input class="form-control"  placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tình trạng :</label>
+                                    <select class="form-control">
+                                        <option value="0">Đang phát hành</option>
+                                        <option value="1">Đã phát hành</option>
+                                        <option value="2">Sắp phát hành</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Thể loại</label>
+                                    <div class="row group-check">
+                                        <div class="col-lg-3">
+                                            <label class="checkbox-inline">
+                                                <input id="category-1" type="checkbox" value="1" name="mangacategory[]">Hành động
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label class="checkbox-inline">
+                                                <input id="category-2" type="checkbox" value="1" name="mangacategory[]">Hành động
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label class="checkbox-inline">
+                                                <input id="category-3" type="checkbox" value="1" name="mangacategory[]">Hành động
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label class="checkbox-inline">
+                                                <input id="category-4" type="checkbox" value="1" name="mangacategory[]">Hành động
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label class="checkbox-inline">
+                                                <input id="category-5" type="checkbox" value="1" name="mangacategory[]">Hành động
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label class="checkbox-inline">
+                                                <input id="category-6" type="checkbox" value="1" name="mangacategory[]">Hành động
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label class="checkbox-inline">
+                                                <input id="category-7" type="checkbox" value="1" name="mangacategory[]">Hành động
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nội dung tóm tắt :</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn btn-primary btn-small" type="submit">Save</button>
+                                    or
+                                    <a class="text-danger" href="#">Cancel</a>
+                                </div>
+                            </div>
+                            <!-- /.col-lg-8 (nested) -->
+                            <div class="col-lg-4">
+                                <label for="manga-preview-image" class="thumbnail-660">
+                                    <div id="preview-image-box" class="preview-container" style="z-index: 1;">
+                                        <div id="prev_thumb_660" class="prev_thumb"></div>
+                                    </div>
+                                    <div class="preview-container prev_container" id="prev_manga-image"></div>
+                                    <span class="thumb-size">Ảnh preview lớn 1280 x 700</span>
+                                    <input type="file" name="preview-image-file" id="manga-preview-image" style="display: none;">
+                                </label>
+                                <div class="clear"></div>
+                                <div class="form-group transfer-box">
+                                    <label for="manga-preview-url">URL ảnh preview</label>
+                                    <input id="manga-preview-url" class="form-control poster-url" type="text" name="manga-preview-url">
+                                    <span class="url-description">Ảnh được chọn ở file sẽ được ưu tiên hơn URL này</span>
+                                </div>
+                                <div class="clear"></div>
+                                <label for="manga-poster-image" class="thumbnail-330">
+                                    <div id="poster-image-box" class="preview-container" style="z-index: 1;">
+                                        <div id="prev_thumb_330" class="prev_thumb"></div>
+                                    </div>
+                                    <div class="preview-container prev_container"></div>
+                                    <span class="thumb-size">Ảnh preview lớn 800 x 600</span>
+                                    <input type="file" name="manga-poster-image" id="manga-poster-image" style="display: none;">
+                                </label>
+                                <div class="clear"></div>
+                                <div class="form-group transfer-box">
+                                    <label for="manga-poster-url">URL ảnh poster</label>
+                                    <input id="manga-poster-url" class="form-control poster-url" type="text" name="manga-poster-url">
+                                    <span class="url-description">Ảnh được chọn ở file sẽ được ưu tiên hơn URL này</span>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- /.col-lg-4 (nested) -->
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+    <!-- End Main Page -->
+</div>
+<!-- End Main Page -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 footer-logo-manga"></div>
+                <div class="col-lg-6">
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Truyện mới</h3>
+                        <a href="#" title="">Truyện Hot</a>
+                        <a href="#" title="">Truyện Hay</a>
+                        <a href="#" title="">Truyện Trong Tháng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Thể Loại</h3>
+                        <a href="#" title="">Hành động</a>
+                        <a href="#" title="">Tình cảm</a>
+                        <a href="#" title="">Phiêu lưu</a>
+                        <a href="#" title="">Viễn tưởng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Từ khóa</h3>
+                        <a href="#" title="">Naruto</a>
+                        <a href="#" title="">Đảo hải tặc</a>
+                        <a href="#" title="">Hội pháp sư</a>
+                        <a href="#" title="">Conan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</footer>
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.hoverIntent.minified.js"></script>
+<script src="./js/jquery.dcmegamenu.1.3.3.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/carouFredSel.js"></script>
+<script src="./js/ctv/ctv.js"></script>
+</body>
+</html>

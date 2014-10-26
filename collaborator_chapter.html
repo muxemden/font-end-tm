@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>.: Truyện Mới :.</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/colla.css" rel="stylesheet">
+    <link href="./css/response-style.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header Page -->
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a class="logo" href="./" title="đọc truyện tranh, truyện mới">
+                    <span>TRUYENMOI.VN</span>
+                </a>
+            </div>
+            <div class="widget-search">
+                <form method="get" id="form-search" action="tim-kiem">
+                    <div>
+                        <input type="text" class="form-control" name="keyword" placeholder="Tìm kiếm truyện tranh">
+                        <input id="search-submit" class="" value=" " type="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="widget-user-profile">
+                <button type="button" class="btn btn-primary">Đăng Nhập</button>
+                <button type="button" class="btn btn-primary">Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <ul id="mega-menu-1">
+            <li class="">
+                <a href="./">Truyện Mới</a>
+            </li>
+            <li class="">
+                <a href="phim-le/" class="dc-mega">Danh sách manga</a>
+            </li>
+            <li>
+                <a href="phim-kinh-dien/">Thêm manga</a>
+            </li>
+            <li>
+                <a href="phim-le/" class="dc-mega">Hồ sơ</a>
+            </li>
+            <li>
+                <a href="phim-bo/" class="dc-mega">Upload</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End Header Page -->
+
+<!-- Main Page -->
+<div class="container grid-980">
+    <!-- Main Page -->
+    <div class="clear"></div>
+    <div class="row">
+        <div class="col-lg-12 body-head">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Thêm chap mới
+                </div>
+                <div class="panel-body">
+                    <div class="page-header">
+                        <h1>Thêm chap mới vào: Hiệp khách giang hồ</h1>
+                    </div>
+                    <div class="row">
+                        <form id="form-manga-chapter-add" method="post" class="form-post-manga" role="form" action="#" enctype="multipart/form-data">
+                            <!-- CSRF Token -->
+                            <input type="hidden" name="_token" value="" />
+                            <!-- ./ csrf token -->
+                            <input type="hidden" value="" name="manga-id">
+                            <div class="col-lg-12">
+                                <div class="chapter-item-wrapper">
+                                    <div class="row chapter-item-data" data-set="">
+                                        <div class="col-lg-1">
+                                            <div class="form-group">
+                                                <label>STT</label>
+                                                <input class="form-control chapter-item-number" name="chapter[][number]">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                <label>Hình ảnh</label>
+                                                <input class="form-control chapter-item-name" name="chapter[][name]">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="form-group">
+                                                <label>Tình trạng</label>
+                                                <select class="form-control chapter-item-status" name="chapter[][status]">
+                                                    <option value="">Tình trạng</option>
+                                                    <option value="vi">Hot</option>
+                                                    <option value="en">Update</option>
+                                                    <option value="cn">New</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 delete-row-data">
+                                            <button class="btn btn-primary chapter-item-delete" type="button">x</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="btn-chapter-add" class="btn btn-success btn-chapter-add" type="button">Thêm dòng</button>
+                                <button class="btn btn-primary"name="btn-chapter-create-chapter" type="submit">Hoàn tất</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="page-header" style="margin-top: 40px !important;">
+                        <div class="row">
+                            <div class="col-lg-8"><h1>Danh sách chapter: </h1></div>
+                            <div class="col-lg-1 quick-btn"><a target="_blank" title="Xem chi tiết truyện" href="#" class="btn btn-primary">Xem truyện</a></div>
+                        </div>
+                    </div>
+                    <div class="row list-eps">
+                        <div class="header-list">
+                            <span class="col-lg-2">Thứ tự</span>
+                            <span class="col-lg-6">Tên chương truyện</span>
+                            <span class="col-lg-2">Tình trạng</span>
+                            <span class="col-lg-2 action">Thao tác</span>
+                        </div>
+                        <div class="form-post-movie" id="form-post-movie" role="form">
+                            <div class="col-lg-12">
+                                <div class="list-data">
+                                    <div class="row item-data" id="chapter-{{ $imc->idChapterDetail }}">
+                                        <div class="text-data-row">
+                                            <form method="POST" enctype="multipart/form-data" action="#">
+                                                <!-- CSRF Token -->
+                                                <input type="hidden" name="_token" value="" />
+                                                <!-- ./ csrf token -->
+                                                <input type="hidden" name="chapter[idManga]" value="1">
+                                                <span class="col-lg-1">
+                                                    <input type="text" class="form-control" name="chapter[order]" disabled="" value="1">
+                                                </span>
+                                                <span class="col-lg-7">
+                                                    <input type="text" class="form-control" name="chapter[name]" disabled="" value="Hiệp khách giang hồ">
+                                                </span>
+                                                <span class="col-lg-2">
+                                                    <select class="form-control chapter-item-language" disabled="" name="chapter[][status]">
+                                                        <option value="">Tình trạng</option>
+                                                        <option value="vi">Hot</option>
+                                                        <option value="en">Update</option>
+                                                        <option value="cn">New</option>
+                                                    </select>
+                                                </span>
+                                                <span class="col-lg-2 btn-action-group">
+                                                    <a class="add btn-for-view" id="btn-add-chapter-123" title="Thêm"></a>
+                                                    <a class="edit btn-for-view" id="btn-edit-chapter-123" title="Sửa"></a>
+                                                    <a class="trash btn-for-delete btn-delete-episode" id="btn-delete-chapter-123" href="#" title="Xóa"></a>
+                                                    <button type="submit" class="btn btn-primary btn-save-chapter btn-for-edit" style="display: none">Lưu</button>
+                                                    <button type="button" class="btn btn-primary btn-cancel btn-for-edit" style="display: none">X</button>
+                                                </span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row item-data" id="chapter-123">
+                                        <div class="text-data-row">
+                                            <form method="POST" enctype="multipart/form-data" action="#">
+                                                <!-- CSRF Token -->
+                                                <input type="hidden" name="_token" value="" />
+                                                <!-- ./ csrf token -->
+                                                <input type="hidden" name="chapter[idManga]" value="1">
+                                                <span class="col-lg-1">
+                                                    <input type="text" class="form-control" name="chapter[order]" disabled="" value="1">
+                                                </span>
+                                                <span class="col-lg-7">
+                                                    <input type="text" class="form-control" name="chapter[name]" disabled="" value="Hiệp khách giang hồ">
+                                                </span>
+                                                <span class="col-lg-2">
+                                                    <select class="form-control chapter-item-language" disabled="" name="chapter[][status]">
+                                                        <option value="">Tình trạng</option>
+                                                        <option value="vi">Hot</option>
+                                                        <option value="en">Update</option>
+                                                        <option value="cn">New</option>
+                                                    </select>
+                                                </span>
+                                                <span class="col-lg-2 btn-action-group">
+                                                    <a class="add btn-for-view" id="btn-add-chapter-234" title="Thêm"></a>
+                                                    <a class="edit btn-for-view" id="btn-edit-chapter-234" title="Sửa"></a>
+                                                    <a class="trash btn-for-delete btn-delete-episode" id="btn-delete-chapter-234" href="#" title="Xóa"></a>
+                                                    <button type="submit" class="btn btn-primary btn-save-chapter btn-for-edit" style="display: none">Lưu</button>
+                                                    <button type="button" class="btn btn-primary btn-cancel btn-for-edit" style="display: none">X</button>
+                                                </span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Page -->
+</div>
+<!-- End Main Page -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 footer-logo-manga"></div>
+                <div class="col-lg-6">
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Truyện mới</h3>
+                        <a href="#" title="">Truyện Hot</a>
+                        <a href="#" title="">Truyện Hay</a>
+                        <a href="#" title="">Truyện Trong Tháng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Thể Loại</h3>
+                        <a href="#" title="">Hành động</a>
+                        <a href="#" title="">Tình cảm</a>
+                        <a href="#" title="">Phiêu lưu</a>
+                        <a href="#" title="">Viễn tưởng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Từ khóa</h3>
+                        <a href="#" title="">Naruto</a>
+                        <a href="#" title="">Đảo hải tặc</a>
+                        <a href="#" title="">Hội pháp sư</a>
+                        <a href="#" title="">Conan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</footer>
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.hoverIntent.minified.js"></script>
+<script src="./js/jquery.dcmegamenu.1.3.3.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/ctv/chapter.js"></script>
+</body>
+</html>

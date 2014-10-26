@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>.: Truyện Mới :.</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/colla.css" rel="stylesheet">
+    <link href="./css/response-style.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header Page -->
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a class="logo" href="./" title="đọc truyện tranh, truyện mới">
+                    <span>TRUYENMOI.VN</span>
+                </a>
+            </div>
+            <div class="widget-search">
+                <form method="get" id="form-search" action="tim-kiem">
+                    <div>
+                        <input type="text" class="form-control" name="keyword" placeholder="Tìm kiếm truyện tranh">
+                        <input id="search-submit" class="" value=" " type="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="widget-user-profile">
+                <button type="button" class="btn btn-primary">Đăng Nhập</button>
+                <button type="button" class="btn btn-primary">Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <ul id="mega-menu-1">
+            <li class="">
+                <a href="./">Truyện Mới</a>
+            </li>
+            <li class="">
+                <a href="phim-le/" class="dc-mega">Danh sách manga</a>
+            </li>
+            <li>
+                <a href="phim-kinh-dien/">Thêm manga</a>
+            </li>
+            <li>
+                <a href="phim-le/" class="dc-mega">Hồ sơ</a>
+            </li>
+            <li>
+                <a href="phim-bo/" class="dc-mega">Upload</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End Header Page -->
+
+<!-- Main Page -->
+<div class="container grid-980">
+    <!-- Main Page -->
+    <div class="page-header">
+        <div class="row">
+            <div class="col-lg-3"><h1>Danh sách phim</h1></div>
+            <div class="col-lg-2">
+                <select class="form-control" id="listfilter-type" name="listfilter[type]">
+                    <option value="">Cả lẻ và bộ</option>
+                    <option value="single">Chỉ phim lẻ</option>
+                    <option value="serial">Chỉ phim bộ</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <select class="form-control" id="listfilter-visible" name="listfilter[visible]">
+                    <option value="">Cả ẩn và hiện</option>
+                    <option value="1">Chỉ visible</option>
+                    <option value="2">Chỉ unvisible</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <select class="form-control" id="listfilter-userid" name="listfilter[userid]">
+                    <option value="">Liệt kê của tất cả</option>
+                    <option value="1">Chỉ phim tôi đăng</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <select class="form-control" id="listfilter-status" name="listfilter[status]">
+                    <option value="">Tất cả trạng thái</option>
+                    <option value="intro">Mới giới thiệu</option>
+                    <option value="trailer">Chỉ có trailer</option>
+                    <option value="updating|complete">Cập nhật+Hoàn tất</option>
+                    <option value="updating">Đang cập nhât</option>
+                    <option value="complete">Hoàn tất</option>
+                </select>
+            </div>
+            <div class="col-lg-1">
+                <button class="btn btn-primary" id="btn-do-filter" type="button">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="row staff-list-maga-box">
+        <div id="manga-1428" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://image.manga24h.com/upload/images/2014/10/17/182186101455Haise.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="manga-item col-3" id="manga-4">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a class="staff-manga-item-thumb" href="manga/edit/1495" title="Giải mã mê cung-The Maze Runner" style="background-image: url('http://static.phimmoi.net/film/1657/poster.medium.jpg');"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a href="manga/edit/1495" title="Giải mã mê cung">Giải mã mê cung</a></div>
+                    <div class="manga-title-2"><a href="manga/edit/1495" title="The Maze Runner">The Maze Runner</a></div>
+                    <div class="manga-title-chap">Admin</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-a dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="manga-1429" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://image.manga24h.com/upload/images/2014/10/16/001350x512zpXIC.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="manga-1430" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://image.manga24h.com/upload/images/2014/10/16/Ganbare-Genki.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="manga-1431" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://image.manga24h.com/upload/images/2014/10/16/KhC3A1t20VE1BB8Dng20C490C6B0E1BB9Dng20C490ua.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="manga-1432" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://image.manga24h.com/upload/images/2014/10/16/1.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="manga-1427" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://static.phimmoi.net/film/1427/poster.medium.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="manga-1427" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://static.phimmoi.net/film/1427/poster.medium.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="manga-1427" class="manga-item col-3">
+            <div class="block-wrapper">
+                <div class="manga-thumbnail">
+                    <a style="background-image: url('http://static.phimmoi.net/film/1427/poster.medium.jpg');" title="Thế giới máy bay 2: Anh hùng và biển lửa-Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427" class="staff-manga-item-thumb"></a>
+                </div>
+                <div class="manga-meta">
+                    <div class="manga-title-1"><a title="Thế giới máy bay 3" href="staff/phim/edit/1427">Thế giới máy bay 3</a></div>
+                    <div class="manga-title-2"><a title="Planes 2: Fire &amp; Rescue" href="staff/phim/edit/1427">Planes 2: Fire &amp; Rescue</a></div>
+                    <div class="manga-title-chap">hoang-vu</div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-a dropdown-toggle" type="button">
+                        <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a class="btn-manga-chapter" href="staff/phim/add-episode/1427">Quản lý chapter</a></li>
+                        <li><a class="btn-manga-edit" href="staff/phim/edit-basic/1427">Sửa thông tin</a></li>
+                        <li><a class="btn-manga-delete" href="staff/phim/edit/1427">Xóa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-page">
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </div>
+    <!-- End Main Page -->
+</div>
+<!-- End Main Page -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 footer-logo-manga"></div>
+                <div class="col-lg-6">
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Truyện mới</h3>
+                        <a href="#" title="">Truyện Hot</a>
+                        <a href="#" title="">Truyện Hay</a>
+                        <a href="#" title="">Truyện Trong Tháng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Thể Loại</h3>
+                        <a href="#" title="">Hành động</a>
+                        <a href="#" title="">Tình cảm</a>
+                        <a href="#" title="">Phiêu lưu</a>
+                        <a href="#" title="">Viễn tưởng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Từ khóa</h3>
+                        <a href="#" title="">Naruto</a>
+                        <a href="#" title="">Đảo hải tặc</a>
+                        <a href="#" title="">Hội pháp sư</a>
+                        <a href="#" title="">Conan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</footer>
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.hoverIntent.minified.js"></script>
+<script src="./js/jquery.dcmegamenu.1.3.3.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/carouFredSel.js"></script>
+</body>
+</html>

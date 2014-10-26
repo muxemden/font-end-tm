@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>.: Truyện Mới :.</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/response-style.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header Page -->
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a class="logo" href="./" title="đọc truyện tranh, truyện mới">
+                    <span>TRUYENMOI.VN</span>
+                </a>
+            </div>
+            <div class="widget-search">
+                <form method="get" id="form-search" action="tim-kiem">
+                    <div>
+                        <input type="text" class="form-control" name="keyword" placeholder="Tìm kiếm truyện tranh">
+                        <input id="search-submit" class="" value=" " type="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="widget-user-profile">
+                <button type="button" class="btn btn-primary">Đăng Nhập</button>
+                <button type="button" class="btn btn-primary">Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <ul id="mega-menu-1">
+            <li class="">
+                <a href="./">Phim Mới</a>
+            </li>
+            <li class="">
+                <a class="dc-mega">Thể loại<span class="dc-mega-icon"></span></a>
+                <div class="sub-container" style="">
+                    <ul class="sub" style="display: none;">
+                        <li><a href="the-loai/phim-hanh-dong/">Phim hành động</a></li>
+                        <li><a href="the-loai/phim-vien-tuong/">Phim viễn tưởng</a></li>
+                        <li><a href="the-loai/phim-chien-tranh/">Phim chiến tranh</a></li>
+                        <li><a href="the-loai/phim-hinh-su/">Phim hình sự</a></li>
+                        <li><a href="the-loai/phim-phieu-luu/">Phim phiêu lưu</a></li>
+                        <li><a href="the-loai/phim-hai-huoc/">Phim hài hước</a></li>
+                        <li><a href="the-loai/phim-vo-thuat/">Phim võ thuật</a></li>
+                        <li><a href="the-loai/phim-hoat-hinh/">Phim hoạt hình</a></li>
+                        <li><a href="the-loai/phim-kinh-di/">Phim kinh dị</a></li>
+                        <li><a href="the-loai/phim-co-trang/">Phim cổ trang</a></li>
+                        <li><a href="the-loai/phim-than-thoai/">Phim thần thoại</a></li>
+                        <li><a href="the-loai/phim-tam-ly/">Phim tâm lý</a></li>
+                        <li><a href="the-loai/phim-tai-lieu/">Phim tài liệu</a></li>
+                        <li><a href="the-loai/phim-the-thao-am-nhac/">Phim Thể thao-Âm nhạc</a></li>
+                        <li><a href="the-loai/phim-gia-dinh/">Phim gia đình</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="dc-mega">Quốc gia<span class="dc-mega-icon"></span></a>
+                <div class="sub-container" style="">
+                    <ul class="sub" style="display: none;">
+                        <li><a href="quoc-gia/vn/">Việt Nam</a></li>
+                        <li><a href="quoc-gia/us/">Mỹ</a></li>
+                        <li><a href="quoc-gia/cn/">Trung Quốc</a></li>
+                        <li><a href="quoc-gia/jp/">Nhật Bản</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="phim-le/" class="dc-mega">Phim lẻ<span class="dc-mega-icon"></span></a>
+                <div class="sub-container" style="">
+                    <ul class="sub" style="display: none;">
+                        <li><a href="phim-le/2014/">Phim lẻ 2014</a></li>
+                        <li><a href="phim-le/2013/">Phim lẻ 2013</a></li>
+                        <li><a href="phim-le/2012/">Phim lẻ 2012</a></li>
+                        <li><a href="phim-le/2011/">Phim lẻ 2011</a></li>
+                        <li><a href="phim-le/2010/">Phim lẻ 2010</a></li>
+                        <li><a href="phim-le/2009/">Phim lẻ 2009</a></li>
+                        <li><a href="phim-le/2008/">Phim lẻ 2008</a></li>
+                        <li><a href="phim-le/-2008/">Phim lẻ trước 2008</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="phim-bo/" class="dc-mega">Phim bộ<span class="dc-mega-icon"></span></a>
+                <div class="sub-container" style="">
+                    <ul class="sub" style="display: none;">
+                        <li><a href="phim-bo/vn/">Phim bộ Việt Nam</a></li>
+                        <li><a href="phim-bo/kr/">Phim bộ Hàn Quốc</a></li>
+                        <li><a href="phim-bo/cn/">Phim bộ Trung Quốc</a></li>
+                        <li><a href="phim-bo/hk/">Phim bộ Hồng Kông</a></li>
+                        <li><a href="phim-bo/tw/">Phim bộ Đài Loan</a></li>
+                        <li><a href="phim-bo/us/">Phim bộ Mỹ</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="phim-kinh-dien/">Phim kinh điển</a>
+            </li>
+            <li>
+                <a href="phim-chieu-rap/">Phim chiếu rạp</a>
+            </li>
+            <li><a href="trailer/">Trailer</a></li><li><a href="yeu-cau-phim/">Yêu cầu</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- End Header Page -->
+
+<!-- Main Page -->
+<div class="container grid-980">
+    <!-- Top Banner -->
+    <div class="row ad-container banner-top">
+        <div class="col-lg-12">
+
+        </div>
+    </div>
+    <!-- End Top Banner -->
+
+    <!-- Bread crumb Menu -->
+    <ol class="breadcrumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+        <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+            <a title="Truyện Mới" href="./" itemprop="url">
+                <span itemprop="title">Truyện Mới</span>
+            </a>
+        </li>
+        <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+            <a title="Hành Động" href="#" itemprop="url">
+                <span itemprop="title">Hành động</span>
+            </a>
+        </li>
+        <li class="active">ONE PIECE - Đảo Hải Tặc</li>
+    </ol>
+    <!-- End Bread crumb Menu -->
+
+    <!-- Main Page -->
+    <div class="row">
+        <!-- Left Main Page -->
+        <div class="col-lg-8">
+            <!-- Infomation Manga -->
+            <div class="manga-info-box">
+                <div class="col-lg-4 manga-image">
+                    <div class="manga-v-img">
+                        <img alt="" src="http://image.manga24h.com/upload/images/2014/01/20/OnePiece2012Calendar07.jpg">
+                        <h2 class="hidden">Chap 752</h2>
+                        <ul class="btn-block">
+                            <li class="item">
+                                <a id="btn-manga-download" class="btn btn-green btn" title="" href="">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 manga-detail">
+                    <h1 class="manga-title"><span class="title">Đảo Hải Tặc - OnePiece</span></h1>
+                    <div class="manga-info-detail">
+                        <dl class="manga-dl">
+                            <dt class="manga-dt">Mới nhất : </dt>
+                            <dd class="manga-dd dd-chap-new">
+                                <a class="chap" href="#" title="">Chap 625</a>
+                            </dd>
+                        </dl>
+                        <dl class="manga-dl">
+                            <dt class="manga-dt">Thể loại : </dt>
+                            <dd class="manga-dd dd-category">
+                                <a class="category" href="#" title="hành động">Hành Động</a>,
+                                <a class="category" href="#" title="hành động">Phiêu Lưu</a>,
+                                <a class="category" href="#" title="hành động">Hài Hước</a>,
+                                <a class="category" href="#" title="hành động">Viễn Tưởng</a>
+                            </dd>
+                        </dl>
+                        <dl class="manga-dl">
+                            <dt class="manga-dt">Tác giả : </dt>
+                            <dd class="manga-dd dd-author">
+                                <a class="category" href="#" title="hành động">Eiichiro ODA</a>
+                            </dd>
+                        </dl>
+                        <dl class="manga-dl">
+                            <dt class="manga-dt">Tình trạng : </dt>
+                            <dd class="manga-dd dd-status">
+                                <a class="category" href="#" title="hành động">Đang cập nhập</a>
+                            </dd>
+                        </dl>
+                        <dl class="manga-dl">
+                            <dt class="manga-dt">Lượt xem : </dt>
+                            <dd class="manga-dd dd-view">
+                                12500
+                            </dd>
+                        </dl>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="box-rating" itemscope="" itemtype="http://data-vocabulary.org/Review-aggregate">
+                        <input id="hint_current" type="hidden" value="">
+                        <input id="score_current" type="hidden" value="10">
+                        <p>Đánh giá truyện <span class="num-rating">(1 lượt)</span></p>
+                        <div id="star" data-score="10" style="cursor: pointer; width: 240px;">
+                            <img src="./images/star-on.png" alt="1" title="Dở tệ">&nbsp;
+                            <img src="./images/star-on.png" alt="2" title="Dở">&nbsp;
+                            <img src="./images/star-on.png" alt="3" title="Không hay">&nbsp;
+                            <img src="./images/star-on.png" alt="4" title="Không hay lắm">&nbsp;
+                            <img src="./images/star-on.png" alt="5" title="Bình thường">&nbsp;
+                            <img src="./images/star-on.png" alt="6" title="Xem được">&nbsp;
+                            <img src="./images/star-on.png" alt="7" title="Có vẻ hay">&nbsp;
+                            <img src="./images/star-on.png" alt="8" title="Hay">&nbsp;
+                            <img src="./images/star-on.png" alt="9" title="Rất hay">&nbsp;
+                            <img src="./images/star-on.png" alt="10" title="Tuyệt hay">
+                            <input type="hidden" name="score" value="10">
+                        </div>
+                        <span id="hint" style="font-size: 12px;"></span>
+                        <span class="hidden" itemprop="votes">1</span>
+                        <span class="hidden" itemprop="rating" itemscope="" itemtype="http://data-vocabulary.org/Rating">
+                            <span itemprop="average">10</span>
+                            <meta itemprop="best" content="10">
+                            <meta itemprop="worst" content="1">
+                        </span>
+                        <div class="fb-like like-at-rating fb_iframe_widget" data-href="phim/ngay-xua-ngay-xua-phan-4-1741/" data-width="60" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=http%3A%2F%2Fwww.phimmoi.net%2Fphim%2Fngay-xua-ngay-xua-phan-4-1741%2F&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=60"><span style="vertical-align: bottom; width: 48px; height: 61px;">
+                            <iframe name="f3742a6e2c" width="60px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fw9JKbyW340G.js%3Fversion%3D41%23cb%3Df1e0a0432c%26domain%3Dwww.phimmoi.net%26origin%3Dhttp%253A%252F%252Fwww.phimmoi.net%252Ff37b46dae8%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww.phimmoi.net%2Fphim%2Fngay-xua-ngay-xua-phan-4-1741%2F&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=60" style="border: none; visibility: visible; width: 48px; height: 61px;" class="">
+                            </iframe></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Infomation Manga -->
+            <div class="clear"></div>
+            <!-- Contain Manga -->
+            <article class="block-manga-content">
+                <h2 class="manga-detail-h2">Nội dung phim</h2>
+                <div class="fb-like like-at-content fb_iframe_widget" data-href="" data-width="140" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=http%3A%2F%2Fwww.phimmoi.net%2Fphim%2Ftham-tu-conan-movie-18-sat-thu-ban-tia-khong-tuong-674%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false&amp;width=140">
+                    <span style="vertical-align: bottom; width: 127px; height: 20px;">
+                        <iframe name="f3923fc9cc" width="140px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fw9JKbyW340G.js%3Fversion%3D41%23cb%3Df139ef92d4%26domain%3Dwww.phimmoi.net%26origin%3Dhttp%253A%252F%252Fwww.phimmoi.net%252Ff3383cfcc8%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww.phimmoi.net%2Fphim%2Ftham-tu-conan-movie-18-sat-thu-ban-tia-khong-tuong-674%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false&amp;width=140" style="border: none; visibility: visible; width: 127px; height: 20px;" class=""></iframe>
+                    </span>
+                </div>
+                <div class="content">1 cựu lính bắn tỉa của "Biệt đội hải cẩu" hay còn gọi là SEALs (một nhánh đặc nhiệm tinh nhuệ của hải quân Hoa Kỳ,
+                    nhóm thường tham chiến tại chiến trường Trung Đông, tiêu diệt khủng bố, và Osama Binladen cũng do SEALs tiêu diệt) tên là Hunter
+                    bị tình nghi dính dáng đến 1 vụ giết người hàng loạt bằng súng bắn tỉa. Nạn nhân là những cựu thành viên của
+                    SEALs và những người có thù oán với Hunter. Mỗi vụ đều để lại 1 con xúc xắc với các mặt khác nhau và 1 vỏ đạn
+                    rỗng. Cả phía FBI cũng tham gia vào vụ này. <br>
+                </div>
+            </article>
+            <!-- End Contain Manga -->
+            <div class="clear"></div>
+            <!-- List Chapter -->
+            <div class="block-list-chapter">
+                <h3 class="manga-detail-h3">Danh sách chap truyện:</h3>
+                <div class="box-manga-content">
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 477px;">
+                        <ul class="list-chapter-box" id="list-chapter-box" style="overflow: hidden; width: auto; height: 477px;">
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 599</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 598</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 597</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 596</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 595</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 594</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 593</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 592</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 591</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                            <li class="list-chapter-item">
+                                <span class="left">
+                                    <a target="_blank" class="color_0077" title="đọc truyện tranh Bleach Chap 599" href="/bleach-chap-599-768385" name="0">Bleach Chap 590</a>
+                                </span>
+                                <span class="right">
+                                    <img src="http://truyen.hay.la/Content/images/hot.gif" alt="đọc truyện tranh Bleach Chap 599">10/4/2014
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="slimScrollBar ui-draggable" style="width: 10px; position: absolute; top: 0px; opacity: 0.4; display: block; z-index: 99; right: 1px; height: 71.1028125px; background: rgb(85, 85, 85);"></div>
+                        <div class="slimScrollRail" style="width: 10px; height: 100%; position: absolute; top: 0px; display: block; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End List Chapter -->
+            <div class="clear"></div>
+            <!-- Tag Manga -->
+            <div class="block-tags">
+                <h3 class="manga-detail-h3">Từ khóa:</h3>
+                <ul class="tag-list">
+                    <li class="tag-item"><a class="tag-link" href="tags/detective+conan+movie+18+dimensional+sniper/" title="detective conan movie 18 dimensional sniper">detective conan movie 18 dimensional sniper</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/detective+conan+movie/" title="detective conan movie">detective conan movie</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/sát+thủ+bắn+tỉa+không+tưởng/" title="sát thủ bắn tỉa không tưởng">sát thủ bắn tỉa không tưởng</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/dimensional+sniper/" title="dimensional sniper">dimensional sniper</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/bắn+tỉa/" title="bắn tỉa">bắn tỉa</a></li><li class="tag-item"><a class="tag-link" href="tags/sniper/" title="sniper">sniper</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/thám+tử+conan/" title="thám tử conan">thám tử conan</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/detective+conan/" title="detective conan">detective conan</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/conan/" title="conan">conan</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/conan+movie/" title="conan movie">conan movie</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/xem+phim+conan/" title="xem phim conan">xem phim conan</a></li>
+                    <li class="tag-item"><a class="tag-link" href="tags/phim+thám+tử+lừng+danh+conan/" title="phim thám tử lừng danh conan">phim thám tử lừng danh conan</a></li>
+                </ul>
+            </div>
+            <!-- End Tag Manga -->
+        </div>
+        <!-- Left Main Page -->
+        <!-- Slide Main Page -->
+        <div class="col-lg-4" id="sidebar">
+            <!-- Facebook -->
+            <div class="facebook-top">
+
+            </div>
+            <!-- End Facebook -->
+            <!-- Top Manga -->
+            <div class="right-box top-manga-week">
+                <h2 class="right-box-header star-icon"><span>Manga Đề Cử</span></h2>
+                <div class="right-box-content">
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;">
+                        <ul class="list-top-manga" id="list-top-manga-week" style="overflow: hidden; width: auto;">
+                            <li class="list-top-manga-item">
+                                <a class="list-top-manga-link" title="Những người còn lại" href="">
+                                    <div class="list-top-manga-item-thumb" style="background-image: url('http://image.manga24h.com/upload/images/2014/02/07/naruto-manga-volume-66.jpg')"></div>
+                                    <div class="list-top-manga-item-info">
+                                        <span class="list-top-manga-item-vn">Naruto</span>
+                                        <span class="list-top-manga-item-en">Naruto</span>
+                                        <span class="list-top-manga-item-view">Lượt xem: 9,883</span>
+                                        <span class="rate-vote rate-vote-10"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-top-manga-item">
+                                <a class="list-top-manga-link" title="Những người còn lại" href="">
+                                    <div class="list-top-manga-item-thumb" style="background-image: url('http://image.manga24h.com/upload/images/2014/02/07/toriko.jpg')"></div>
+                                    <div class="list-top-manga-item-info">
+                                        <span class="list-top-manga-item-vn">Toriko</span>
+                                        <span class="list-top-manga-item-en">Toriko</span>
+                                        <span class="list-top-manga-item-view">Lượt xem: 9,883</span>
+                                        <span class="rate-vote rate-vote-10"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-top-manga-item">
+                                <a class="list-top-manga-link" title="Những người còn lại" href="">
+                                    <div class="list-top-manga-item-thumb" style="background-image: url('http://image.manga24h.com/upload/images/2014/10/08/1.jpg')"></div>
+                                    <div class="list-top-manga-item-info">
+                                        <span class="list-top-manga-item-vn">Toto ! The wonderful adventure</span>
+                                        <span class="list-top-manga-item-en">Toto ! The wonderful adventure</span>
+                                        <span class="list-top-manga-item-view">Lượt xem: 9,883</span>
+                                        <span class="rate-vote rate-vote-10"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-top-manga-item">
+                                <a class="list-top-manga-link" title="Những người còn lại" href="">
+                                    <div class="list-top-manga-item-thumb" style="background-image: url('http://image.manga24h.com/upload/images/2014/01/20/OnePiece2012Calendar07.jpg')"></div>
+                                    <div class="list-top-manga-item-info">
+                                        <span class="list-top-manga-item-vn">Đảo Hải Tặc</span>
+                                        <span class="list-top-manga-item-en">One Piece</span>
+                                        <span class="list-top-manga-item-view">Lượt xem: 9,883</span>
+                                        <span class="rate-vote rate-vote-10"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-top-manga-item">
+                                <a class="list-top-manga-link" title="Những người còn lại" href="">
+                                    <div class="list-top-manga-item-thumb" style="background-image: url('http://static.phimmoi.net/film/1499/poster.small.jpg')"></div>
+                                    <div class="list-top-manga-item-info">
+                                        <span class="list-top-manga-item-vn">Những người còn lại</span>
+                                        <span class="list-top-manga-item-en">The Remaining</span>
+                                        <span class="list-top-manga-item-view">Lượt xem: 9,883</span>
+                                        <span class="rate-vote rate-vote-10"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-top-manga-item">
+                                <a class="list-top-manga-link" title="Những người còn lại" href="">
+                                    <div class="list-top-manga-item-thumb" style="background-image: url('http://static.phimmoi.net/film/1724/poster.small.jpg')"></div>
+                                    <div class="list-top-manga-item-info">
+                                        <span class="list-top-manga-item-vn">Những người còn lại</span>
+                                        <span class="list-top-manga-item-en">The Remaining</span>
+                                        <span class="list-top-manga-item-view">Lượt xem: 9,883</span>
+                                        <span class="rate-vote rate-vote-10"></span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Manga -->
+        </div>
+        <!-- End Slide Main Page -->
+    <!-- End Main Page -->
+    </div>
+</div>
+<!-- End Main Page -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 footer-logo-manga"></div>
+                <div class="col-lg-6">
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Truyện mới</h3>
+                        <a href="#" title="">Truyện Hot</a>
+                        <a href="#" title="">Truyện Hay</a>
+                        <a href="#" title="">Truyện Trong Tháng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Thể Loại</h3>
+                        <a href="#" title="">Hành động</a>
+                        <a href="#" title="">Tình cảm</a>
+                        <a href="#" title="">Phiêu lưu</a>
+                        <a href="#" title="">Viễn tưởng</a>
+                    </div>
+                    <div class="footer-link">
+                        <h3 class="footer-link-head">Từ khóa</h3>
+                        <a href="#" title="">Naruto</a>
+                        <a href="#" title="">Đảo hải tặc</a>
+                        <a href="#" title="">Hội pháp sư</a>
+                        <a href="#" title="">Conan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</footer>
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.hoverIntent.minified.js"></script>
+<script src="./js/jquery.dcmegamenu.1.3.3.js"></script>
+<script src="./js/carouFredSel.js"></script>
+<script src="./js/common.js"></script>
+</body>
+</html>

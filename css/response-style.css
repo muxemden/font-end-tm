@@ -1,0 +1,96 @@
+/* Responsive */
+@media screen and (max-width: 1280px) {
+    footer > .footer {
+        padding: 5px 0 10px 0 !important;
+    }
+
+    .ads-chap {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+    .ads-chap {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    nav #mega-menu-1 {
+        height: 89px;
+    }
+    .list-image-chapter image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header > .container
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .header > .container > .widget-search {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+    #form-search input[name=keyword]
+    {
+        width: 100% !important;
+    }
+    nav #mega-menu-1 {
+        height: 89px;
+    }
+    .manga-list-index .list-manga .manga-item:nth-child(3n)
+    {
+        margin-right: 0px !important;
+    }
+
+    #sidebar .right-box,
+    #sidebar .right-box .right-box-content
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .manga-list-index
+    {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav #mega-menu-1 {
+        height: 132px;
+    }
+
+    .manga-list-index
+    {
+        width: 100% !important;
+    }
+
+    /*Sidebar: Top film box*/
+    .right-box .list-top-manga-link
+    {
+        display: block;
+    }
+    .right-box .list-top-manga-link .list-top-manga-item-info
+    {
+        position: static !important;
+        float: none !important;
+        margin-left: 110px !important;
+        padding: 0 !important;
+        width: auto !important;
+        width: 100% !important;
+    }
+}
+/* End Responsive */
